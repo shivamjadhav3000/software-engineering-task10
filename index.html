@@ -71,19 +71,21 @@
         <a href="#">About</a>
     </header>
 
+    <h1>Welcome to Apple</h1>
+
     <div class="product-section">
         <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <img src="https://via.placeholder.com/150" alt="iPhone 13">
             <h3>iPhone 13</h3>
             <p>The iPhone 13 is a revolutionary smartphone with advanced features.</p>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <img src="https://via.placeholder.com/150" alt="MacBook Pro">
             <h3>MacBook Pro</h3>
             <p>The MacBook Pro is a powerful laptop for all your computing needs.</p>
         </div>
         <div class="product-card">
-            <img src="https://via.placeholder.com/150" alt="Product Image">
+            <img src="https://via.placeholder.com/150" alt="iPad Pro">
             <h3>iPad Pro</h3>
             <p>The iPad Pro is a versatile tablet for work and play.</p>
         </div>
@@ -92,9 +94,15 @@
     <div class="form-section">
         <h2>Contact Us</h2>
         <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            
             <button type="submit">Submit</button>
         </form>
     </div>
@@ -104,7 +112,6 @@
     </div>
 
     <script>
-        // Example JavaScript to add interactivity
         document.querySelector('form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent form from submitting
             alert('Form submitted!');
